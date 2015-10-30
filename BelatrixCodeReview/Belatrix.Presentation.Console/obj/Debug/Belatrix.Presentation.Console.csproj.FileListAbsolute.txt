@@ -1,0 +1,5 @@
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Presentation.Console\bin\Debug\Belatrix.Presentation.Console.exe.config
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Presentation.Console\bin\Debug\Belatrix.Presentation.Console.exe
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Presentation.Console\bin\Debug\Belatrix.Presentation.Console.pdb
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Presentation.Console\obj\Debug\Belatrix.Presentation.Console.exe
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Presentation.Console\obj\Debug\Belatrix.Presentation.Console.pdb

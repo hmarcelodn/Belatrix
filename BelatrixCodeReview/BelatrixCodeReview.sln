@@ -3,7 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B0107B5F-AB03-4F4A-B42C-D61C050F3FE7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.Logging", "Belatrix.Logging\Belatrix.Logging.csproj", "{67782E63-0BB4-4BEC-AD3C-DEFA236D309C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.Logging.Tests", "Belatrix.Logging.Tests\Belatrix.Logging.Tests.csproj", "{135BEA7D-4D0F-4B85-B75D-3E23B44C33B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.Presentation.Console", "Belatrix.Presentation.Console\Belatrix.Presentation.Console.csproj", "{95911777-5227-44A0-B7B0-E08FAF6E3666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.Dependency", "Belatrix.Dependency\Belatrix.Dependency.csproj", "{67CAD9D3-4101-43EC-90C9-B7C286790999}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67782E63-0BB4-4BEC-AD3C-DEFA236D309C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67782E63-0BB4-4BEC-AD3C-DEFA236D309C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67782E63-0BB4-4BEC-AD3C-DEFA236D309C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67782E63-0BB4-4BEC-AD3C-DEFA236D309C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135BEA7D-4D0F-4B85-B75D-3E23B44C33B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135BEA7D-4D0F-4B85-B75D-3E23B44C33B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135BEA7D-4D0F-4B85-B75D-3E23B44C33B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135BEA7D-4D0F-4B85-B75D-3E23B44C33B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95911777-5227-44A0-B7B0-E08FAF6E3666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95911777-5227-44A0-B7B0-E08FAF6E3666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95911777-5227-44A0-B7B0-E08FAF6E3666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95911777-5227-44A0-B7B0-E08FAF6E3666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CAD9D3-4101-43EC-90C9-B7C286790999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CAD9D3-4101-43EC-90C9-B7C286790999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CAD9D3-4101-43EC-90C9-B7C286790999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CAD9D3-4101-43EC-90C9-B7C286790999}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
