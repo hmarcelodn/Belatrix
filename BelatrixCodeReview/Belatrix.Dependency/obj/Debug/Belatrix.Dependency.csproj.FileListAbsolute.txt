@@ -7,3 +7,5 @@ C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Depende
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Castle.Core.xml
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Castle.Windsor.xml
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\obj\Debug\Belatrix.Dependency.csprojResolveAssemblyReference.cache
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Logging.dll
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Logging.pdb

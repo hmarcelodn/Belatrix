@@ -45,6 +45,8 @@
     <Compile Include="DataBaseOutput\DatabaseJobLogger.cs" />
     <Compile Include="DataBaseOutput\DataBaseWritter.cs" />
     <Compile Include="DataBaseOutput\IDataBaseWritter.cs" />
+    <Compile Include="Enum\EnumJobLoggerType.cs" />
+    <Compile Include="Factory\JobLoggerFactory.cs" />
     <Compile Include="FileOutput\FileJobLogger.cs" />
     <Compile Include="FileOutput\FileWritter.cs" />
     <Compile Include="FileOutput\IFileWritter.cs" />
@@ -53,6 +55,7 @@
     <Compile Include="Legacy\JobLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
