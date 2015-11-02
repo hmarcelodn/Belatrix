@@ -11,8 +11,20 @@ namespace Belatrix.Logging.DataBaseOutput
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand("Insert into Log Values('" + s + "', " + "0" + ")"))
+                using (SqlCommand command = new SqlCommand("Insert into Log Values(@message, @type)"))
                 {
+                    SqlParameter messageParam = new SqlParameter();
+                    SqlParameter typeParam = new SqlParameter();
+
+                    messageParam.ParameterName = "@message";
+                    messageParam.Value = s;
+
+                    typeParam.ParameterName = "@type";
+                    typeParam.Value = 0;
+
+                    command.Parameters.Add(messageParam);
+                    command.Parameters.Add(typeParam);
+
                     command.ExecuteNonQuery();
                 }
 

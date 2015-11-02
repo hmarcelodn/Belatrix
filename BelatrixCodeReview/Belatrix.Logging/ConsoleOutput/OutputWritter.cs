@@ -2,7 +2,7 @@
 
 namespace Belatrix.Logging.ConsoleOutput
 {
-    public class OutputWritter:IOutputWriter
+    public class OutputWritter : IOutputWriter
     {
         public void WriteLine(string s)
         {
