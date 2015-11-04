@@ -48,7 +48,9 @@ namespace Belatrix.Dependency.Installer
                             ServiceOverride.ForKey("consoleLogger").Eq("consoleJobLogger"),
                             ServiceOverride.ForKey("databaseLogger").Eq("databaseJobLogger"),
                             ServiceOverride.ForKey("fileLogger").Eq("fileJobLogger")
-                         )
+                         ),
+
+                Component.For<MessageFactory>()
             );
         }
     }

@@ -7,6 +7,7 @@ namespace Belatrix.Presentation.Console
     using Belatrix.Logging.Enum;
     using Belatrix.Logging.Factory;
     using Belatrix.Dependency.Bootstrapper;
+    using Belatrix.Logging.Messages;
 
     class Program
     {
@@ -17,6 +18,7 @@ namespace Belatrix.Presentation.Console
             ConfigureInstallers();
 
             var jobLoggingFactory = container.Resolve<JobLoggerFactory>();
+            var messageFactory = container.Resolve<MessageFactory>();
 
             IList<IJobLogger> jobLoggers = new List<IJobLogger>();
             jobLoggers.Add(jobLoggingFactory.Create(EnumJobLoggerType.CONSOLE));
@@ -25,8 +27,8 @@ namespace Belatrix.Presentation.Console
 
             foreach (var logger in jobLoggers)
             {
-                logger.LogMessage("Test");
-            }            
+                logger.LogMessage(messageFactory.Create("Test", EnumMessageType.INFO));
+            }
         }
 
         private static void ConfigureInstallers()

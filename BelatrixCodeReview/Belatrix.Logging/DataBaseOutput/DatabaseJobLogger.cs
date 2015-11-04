@@ -12,9 +12,9 @@
             this.databaseWritter = databaseWritter;
         }
 
-        public void LogMessage(string message)
+        public void LogMessage(Message message)
         {
-            this.databaseWritter.Save(message);
+            this.databaseWritter.Save(message.MessageText);
         }
     }
 }

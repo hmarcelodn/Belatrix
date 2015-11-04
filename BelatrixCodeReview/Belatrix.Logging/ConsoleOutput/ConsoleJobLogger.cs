@@ -13,9 +13,9 @@ namespace Belatrix.Logging.ConsoleOutput
             this.outputWriter = outputWriter;
         }
 
-        public void LogMessage(string message)
-        {            
-            this.outputWriter.WriteLine(string.Format("{0} - {1}", DateTime.Now.ToShortDateString(), message));
+        public void LogMessage(Message message)
+        {
+            this.outputWriter.WriteLine(string.Format("{0} - {1}", DateTime.Now.ToShortDateString(), message.MessageText));
         }
     }
 }

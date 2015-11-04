@@ -40,20 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\IMessage.cs" />
+    <Compile Include="Common\Message.cs" />
     <Compile Include="ConsoleOutput\ConsoleJobLogger.cs" />
     <Compile Include="ConsoleOutput\OutputWritter.cs" />
     <Compile Include="DataBaseOutput\DatabaseJobLogger.cs" />
     <Compile Include="DataBaseOutput\DataBaseWritter.cs" />
     <Compile Include="DataBaseOutput\IDataBaseWritter.cs" />
     <Compile Include="Enum\EnumJobLoggerType.cs" />
+    <Compile Include="Enum\EnumMessageType.cs" />
     <Compile Include="Factory\JobLoggerFactory.cs" />
+    <Compile Include="Factory\MessageFactory.cs" />
     <Compile Include="FileOutput\FileJobLogger.cs" />
     <Compile Include="FileOutput\FileWritter.cs" />
     <Compile Include="FileOutput\IFileWritter.cs" />
     <Compile Include="Common\IJobLogger.cs" />
     <Compile Include="ConsoleOutput\IOutputWriter.cs" />
     <Compile Include="Legacy\JobLogger.cs" />
+    <Compile Include="Messages\ErrorMessage.cs" />
+    <Compile Include="Messages\InfoMessage.cs" />
+    <Compile Include="Messages\WarningMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

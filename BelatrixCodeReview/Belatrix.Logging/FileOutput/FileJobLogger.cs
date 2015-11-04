@@ -11,9 +11,9 @@
             this.fileWritter = fileWritter;
         }
 
-        public void LogMessage(string message)
+        public void LogMessage(Message message)
         {
-            this.fileWritter.WriteFile(message);      
+            this.fileWritter.WriteFile(message.MessageText);      
         }
     }
 }

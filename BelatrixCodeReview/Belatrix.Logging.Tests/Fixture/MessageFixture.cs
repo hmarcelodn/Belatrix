@@ -1,16 +1,19 @@
 ﻿
+using Belatrix.Logging.Common;
+using Belatrix.Logging.Messages;
+
 namespace Belatrix.Logging.Tests
 {
     public class MessageFixture
     {
-        public static string CreateError()
+        public static Message CreateError()
         {
-            return "Error Message";
+            return new ErrorMessage("Error Message");
         }
 
-        public static string CreateWarning()
+        public static Message CreateWarning()
         {
-            return "Warning Messages";
+            return new WarningMessage("Warning Messages");
         }
     }
 }
