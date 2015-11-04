@@ -26,7 +26,7 @@ namespace Belatrix.Presentation.Console
             foreach (var logger in jobLoggers)
             {
                 logger.LogMessage("Test");
-            }
+            }            
         }
 
         private static void ConfigureInstallers()

@@ -16,8 +16,8 @@ namespace Belatrix.Logging.Factory
                                 IJobLogger fileLogger)
         {
             this.loggersDic.Add(EnumJobLoggerType.CONSOLE, consoleLogger);
-            this.loggersDic.Add(EnumJobLoggerType.DATABASE, consoleLogger);
-            this.loggersDic.Add(EnumJobLoggerType.FILE, consoleLogger);
+            this.loggersDic.Add(EnumJobLoggerType.DATABASE, databaseLogger);
+            this.loggersDic.Add(EnumJobLoggerType.FILE, fileLogger);
         }
 
         public IJobLogger Create(EnumJobLoggerType enumJobLoggerType)

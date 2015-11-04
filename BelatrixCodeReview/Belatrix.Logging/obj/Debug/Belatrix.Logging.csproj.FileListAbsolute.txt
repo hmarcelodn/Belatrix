@@ -2,3 +2,4 @@ C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Logging
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Logging\bin\Debug\Belatrix.Logging.pdb
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Logging\obj\Debug\Belatrix.Logging.dll
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Logging\obj\Debug\Belatrix.Logging.pdb
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Logging\obj\Debug\Belatrix.Logging.csprojResolveAssemblyReference.cache

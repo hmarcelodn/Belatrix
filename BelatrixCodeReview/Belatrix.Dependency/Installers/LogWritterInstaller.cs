@@ -7,6 +7,7 @@ namespace Belatrix.Dependency.Installer
     using Belatrix.Logging.Common;
     using Belatrix.Logging.ConsoleOutput;
     using Belatrix.Logging.DataBaseOutput;
+    using Belatrix.Logging.Factory;
     using Belatrix.Logging.FileOutput;
 
     public class LogWritterInstaller : IWindsorInstaller
@@ -40,8 +41,14 @@ namespace Belatrix.Dependency.Installer
                 Component.For<IJobLogger>()
                          .ImplementedBy<FileJobLogger>()
                          .DependsOn(ServiceOverride.ForKey<IFileWritter>().Eq("fileWritter"))
-                         .Named("fileJobLogger")
+                         .Named("fileJobLogger"),
 
+                Component.For<JobLoggerFactory>()
+                         .DependsOn(
+                            ServiceOverride.ForKey("consoleLogger").Eq("consoleJobLogger"),
+                            ServiceOverride.ForKey("databaseLogger").Eq("databaseJobLogger"),
+                            ServiceOverride.ForKey("fileLogger").Eq("fileJobLogger")
+                         )
             );
         }
     }
