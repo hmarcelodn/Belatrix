@@ -265,5 +265,26 @@ namespace Belatrix.Logging.Tests.Facade
             action.ShouldThrow<JobLoggerConfigurationException>();
         }
 
+        [TestMethod]
+        public void WhenEnableAllLoggersShouldCallThem()
+        {
+            //Arrange
+            var jobLoggerBuilder = new JobLoggerBuilder(new JobLogger(), mockJobLoggerFactory.Object);
+            var jobLogger = jobLoggerBuilder.EnableConsoleLog()
+                                            .EnableDatabaseLog()
+                                            .EnableFileLog()
+                                            .EnableInfoMessage()
+                                            .EnableErrorMessage()
+                                            .EnableWarningMessage()
+                                            .Build();
+
+            //Act            
+            jobLogger.LogMessage(MessageFixture.CreateError());
+
+            //Assert
+            mockDatabaseWriter.Verify(w => w.Save(It.IsAny<Message>()), Times.Once);
+            mockFileWriter.Verify(w => w.WriteFile(It.IsAny<Message>()), Times.Once);
+            mockOutputWriter.Verify(w => w.WriteLine(It.IsAny<Message>()), Times.Once);
+        }
     }
 }
