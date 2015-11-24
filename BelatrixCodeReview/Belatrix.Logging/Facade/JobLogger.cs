@@ -53,7 +53,7 @@ namespace Belatrix.Logging.Facade
             }
         }
 
-        public void SetJobLogger(IJobLogger jobLogger)
+        internal void SetJobLogger(IJobLogger jobLogger)
         {
             this.jobLoggers.Add(jobLogger);
         }
