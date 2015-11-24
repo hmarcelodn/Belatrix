@@ -14,7 +14,7 @@
 
         public void LogMessage(Message message)
         {
-            this.databaseWritter.Save(message.MessageText);
+            this.databaseWritter.Save(message);
         }
     }
 }

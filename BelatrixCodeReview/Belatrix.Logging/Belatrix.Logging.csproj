@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Belatrix.Logging</RootNamespace>
     <AssemblyName>Belatrix.Logging</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\JobLoggerBuilder.cs" />
     <Compile Include="Common\Message.cs" />
     <Compile Include="ConsoleOutput\ConsoleJobLogger.cs" />
     <Compile Include="ConsoleOutput\OutputWritter.cs" />
@@ -48,6 +50,10 @@
     <Compile Include="DataBaseOutput\IDataBaseWritter.cs" />
     <Compile Include="Enum\EnumJobLoggerType.cs" />
     <Compile Include="Enum\EnumMessageType.cs" />
+    <Compile Include="Exceptions\JobLoggerConfigurationException.cs" />
+    <Compile Include="Facade\JobLogger.cs" />
+    <Compile Include="Factory\IJobLoggerFactory.cs" />
+    <Compile Include="Factory\IMessageFactory.cs" />
     <Compile Include="Factory\JobLoggerFactory.cs" />
     <Compile Include="Factory\MessageFactory.cs" />
     <Compile Include="FileOutput\FileJobLogger.cs" />
@@ -55,7 +61,6 @@
     <Compile Include="FileOutput\IFileWritter.cs" />
     <Compile Include="Common\IJobLogger.cs" />
     <Compile Include="ConsoleOutput\IOutputWriter.cs" />
-    <Compile Include="Legacy\JobLogger.cs" />
     <Compile Include="Messages\ErrorMessage.cs" />
     <Compile Include="Messages\InfoMessage.cs" />
     <Compile Include="Messages\WarningMessage.cs" />

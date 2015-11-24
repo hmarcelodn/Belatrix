@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssert;
 using Moq;
 
 namespace Belatrix.Logging.Tests
@@ -29,7 +28,7 @@ namespace Belatrix.Logging.Tests
             jobLogger.LogMessage(MessageFixture.CreateError());
 
             //Assert
-            mockOutputWriter.Verify(w => w.WriteLine(It.IsAny<string>()), Times.Once);
+            mockOutputWriter.Verify(w => w.WriteLine(It.IsAny<Message>()), Times.Once);
         }
     }
 }

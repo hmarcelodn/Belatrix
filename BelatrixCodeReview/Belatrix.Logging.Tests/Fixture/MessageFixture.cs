@@ -15,5 +15,10 @@ namespace Belatrix.Logging.Tests
         {
             return new WarningMessage("Warning Messages");
         }
+
+        public static Message CreateNullMessageText()
+        {
+            return new InfoMessage("");
+        }
     }
 }

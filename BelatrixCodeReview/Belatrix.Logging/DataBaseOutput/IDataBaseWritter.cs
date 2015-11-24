@@ -1,8 +1,10 @@
 ﻿
 namespace Belatrix.Logging.DataBaseOutput
 {
+    using Belatrix.Logging.Common;
+
     public interface IDataBaseWritter
     {
-        void Save(string s);
+        void Save(Message s);
     }
 }

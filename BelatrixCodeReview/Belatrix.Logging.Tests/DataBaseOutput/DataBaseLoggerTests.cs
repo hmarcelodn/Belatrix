@@ -28,7 +28,7 @@ namespace Belatrix.Logging.Tests.DataBaseOutput
             jobLogger.LogMessage(MessageFixture.CreateError());
 
             //Assert
-            mockOutputWriter.Verify(w => w.Save(It.IsAny<string>()), Times.Once);
+            mockOutputWriter.Verify(w => w.Save(It.IsAny<Message>()), Times.Once);
         }
     }
 }

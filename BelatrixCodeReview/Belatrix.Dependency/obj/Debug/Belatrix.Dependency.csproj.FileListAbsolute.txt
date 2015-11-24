@@ -1,11 +1,11 @@
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Dependency.dll
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Dependency.pdb
-C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\obj\Debug\Belatrix.Dependency.dll
-C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\obj\Debug\Belatrix.Dependency.pdb
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Logging.dll
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Castle.Core.dll
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Castle.Windsor.dll
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Logging.pdb
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Castle.Core.xml
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Castle.Windsor.xml
 C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\obj\Debug\Belatrix.Dependency.csprojResolveAssemblyReference.cache
-C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Logging.dll
-C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\bin\Debug\Belatrix.Logging.pdb
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\obj\Debug\Belatrix.Dependency.dll
+C:\Users\marcelodn\Documents\GitHub\Belatrix\BelatrixCodeReview\Belatrix.Dependency\obj\Debug\Belatrix.Dependency.pdb

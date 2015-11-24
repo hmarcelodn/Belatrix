@@ -7,5 +7,10 @@ namespace Belatrix.Logging.Messages
         public ErrorMessage(string message)
             : base(message)
         { }
+
+        public override Enum.EnumMessageType MessageType
+        {
+            get { return Enum.EnumMessageType.ERROR; }
+        }
     }
 }

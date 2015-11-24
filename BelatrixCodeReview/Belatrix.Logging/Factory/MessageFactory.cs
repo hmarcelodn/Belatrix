@@ -1,26 +1,32 @@
-﻿using Belatrix.Logging.Common;
-using Belatrix.Logging.Enum;
-using Belatrix.Logging.Messages;
-
-namespace Belatrix.Logging.Factory
+﻿namespace Belatrix.Logging.Factory
 {
-    public class MessageFactory
+    using Belatrix.Logging.Common;
+    using Belatrix.Logging.Enum;
+    using Belatrix.Logging.Messages;
+
+    public class MessageFactory : IMessageFactory
     {
         public Message Create(string s, EnumMessageType type)
         {
-            Message message = null;
+            Message message = (Message)null;
 
             switch (type)
-            { 
+            {
                 case EnumMessageType.INFO:
-                    message =  new InfoMessage(s);
-                    break;
+                    {
+                        message = new InfoMessage(s);
+                        break;
+                    }
                 case EnumMessageType.WARNING:
-                    message = new WarningMessage(s);
-                    break;
+                    {
+                        message = new WarningMessage(s);
+                        break;
+                    }
                 case EnumMessageType.ERROR:
-                    message = new ErrorMessage(s);
-                    break;
+                    {
+                        message = new ErrorMessage(s);
+                        break;
+                    }
             }
 
             return message;

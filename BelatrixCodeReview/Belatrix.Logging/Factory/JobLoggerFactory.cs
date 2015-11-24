@@ -6,14 +6,11 @@ namespace Belatrix.Logging.Factory
     using Belatrix.Logging.Common;
     using Belatrix.Logging.Enum;
 
-    public class JobLoggerFactory
+    public class JobLoggerFactory : IJobLoggerFactory
     {
-        private IDictionary<EnumJobLoggerType, IJobLogger> loggersDic = 
-            new Dictionary<EnumJobLoggerType, IJobLogger>();
+        private IDictionary<EnumJobLoggerType, IJobLogger> loggersDic = new Dictionary<EnumJobLoggerType, IJobLogger>();
 
-        public JobLoggerFactory(IJobLogger consoleLogger, 
-                                IJobLogger databaseLogger,
-                                IJobLogger fileLogger)
+        public JobLoggerFactory(IJobLogger consoleLogger, IJobLogger databaseLogger, IJobLogger fileLogger)
         {
             this.loggersDic.Add(EnumJobLoggerType.CONSOLE, consoleLogger);
             this.loggersDic.Add(EnumJobLoggerType.DATABASE, databaseLogger);

@@ -4,9 +4,11 @@ using Castle.Windsor;
 
 namespace Belatrix.Dependency.Installer
 {
+    using Belatrix.Logging.Builder;
     using Belatrix.Logging.Common;
     using Belatrix.Logging.ConsoleOutput;
     using Belatrix.Logging.DataBaseOutput;
+    using Belatrix.Logging.Facade;
     using Belatrix.Logging.Factory;
     using Belatrix.Logging.FileOutput;
 
@@ -48,9 +50,17 @@ namespace Belatrix.Dependency.Installer
                             ServiceOverride.ForKey("consoleLogger").Eq("consoleJobLogger"),
                             ServiceOverride.ForKey("databaseLogger").Eq("databaseJobLogger"),
                             ServiceOverride.ForKey("fileLogger").Eq("fileJobLogger")
-                         ),
+                         ).Named("jobLoggerFactory"),
 
-                Component.For<MessageFactory>()
+                Component.For<MessageFactory>(),
+
+                Component.For<JobLogger>().Named("jobLogger"),
+
+                Component.For<JobLoggerBuilder>()
+                        .DependsOn(
+                            ServiceOverride.ForKey("jobLogger").Eq("jobLogger"),
+                            ServiceOverride.ForKey("loggerFactory").Eq("jobLoggerFactory") 
+                        )
             );
         }
     }

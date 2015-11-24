@@ -1,4 +1,5 @@
 ﻿
+using Belatrix.Logging.Enum;
 namespace Belatrix.Logging.Common
 {
     public abstract class Message
@@ -17,5 +18,7 @@ namespace Belatrix.Logging.Common
         {
             get { return this.message; }
         }
+
+        public abstract EnumMessageType MessageType { get; }
     }
 }

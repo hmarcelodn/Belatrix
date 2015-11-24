@@ -1,8 +1,9 @@
-﻿
-namespace Belatrix.Logging.ConsoleOutput
+﻿namespace Belatrix.Logging.ConsoleOutput
 {
+    using Belatrix.Logging.Common;
+
     public interface IOutputWriter
     {
-        void WriteLine(string s);
+        void WriteLine(Message message);
     }
 }

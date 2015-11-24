@@ -13,7 +13,7 @@
 
         public void LogMessage(Message message)
         {
-            this.fileWritter.WriteFile(message.MessageText);      
+            this.fileWritter.WriteFile(message);   
         }
     }
 }
