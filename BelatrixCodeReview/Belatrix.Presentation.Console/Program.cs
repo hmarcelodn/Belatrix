@@ -42,10 +42,12 @@ namespace Belatrix.Presentation.Console
                 Message message1 = messageFactory.Create("Test Info Message", EnumMessageType.INFO);
                 Message message2 = messageFactory.Create("Test Warn Message", EnumMessageType.WARNING);
                 Message message3 = messageFactory.Create("Test Error Message", EnumMessageType.ERROR);
+                Message nullMessage = messageFactory.Create(string.Empty, EnumMessageType.ERROR); 
 
                 logger.LogMessage(message1);
                 logger.LogMessage(message2);
                 logger.LogMessage(message3);
+                logger.LogMessage(nullMessage);
             }
             catch (JobLoggerConfigurationException ex)
             {
